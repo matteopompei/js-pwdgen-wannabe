@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js-pwdgen-wannabe</title>
+</head>
+<body>
+  <h1>La password consigliata è <span id="pass" style="color: #00FF00;"></span></h1>
+
+  <script type="text/javascript">
+    const nome = prompt('Qual è il tuo nome?');
+    const cognome = prompt('Qual è il tuo cognome?');
+    const colore = prompt('Qual è il tuo colore preferito?');
+    const password = nome + cognome + colore
+
+    document.getElementById("pass").innerHTML = password + "21";
+  </script>
+</body>
+</html>
